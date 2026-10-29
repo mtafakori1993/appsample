@@ -1,0 +1,3 @@
+// Company mark for «کاوشگران فناوری خاورمیانه»: compass star in a rounded tile
+document.querySelectorAll('u[data-logo]').forEach((e,n)=>{const s=e.dataset.logo;
+e.outerHTML=`<svg width="${s}" height="${s}" viewBox="0 0 40 40" style="flex:none"><defs><linearGradient id="lg${n}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#165A54"/><stop offset="1" stop-color="#3E9B5B"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lg${n})"/><circle cx="20" cy="20" r="12.5" fill="none" stroke="#91DA73" stroke-opacity=".55" stroke-width="1.2"/><path d="M20 7.5l3.6 8.9 8.9 3.6-8.9 3.6L20 32.5l-3.6-8.9L7.5 20l8.9-3.6z" fill="#fff"/><circle cx="20" cy="20" r="2.2" fill="#0E3338"/></svg>`});

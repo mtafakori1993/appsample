@@ -1,0 +1,121 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+:root{--navy:#021C25;--teal:#0E3338;--ft:#165A54;--lg:#91DA73;--bg:#F1F6F4;--ink:#0F2428;--mut:#66787A;--line:#DDE7E5}
+body{background:radial-gradient(900px 700px at 70% 30%,rgba(22,90,84,.5),transparent 60%),linear-gradient(135deg,#021C25,#091E27 60%,#0E3338)}
+.browser{background:var(--bg);color:var(--ink);font-size:12.5px}
+.chrome{direction:ltr}.chrome b:nth-child(1){background:#ff5f57}.chrome b:nth-child(2){background:#febc2e}.chrome b:nth-child(3){background:#28c840}
+.sb{width:232px;background:linear-gradient(180deg,#0E3338,#021C25);color:#c7dad7;padding:20px 14px;display:flex;flex-direction:column;flex:none}
+.lg{display:flex;align-items:center;gap:11px;padding:0 4px 18px;border-bottom:1px solid rgba(255,255,255,.08)}
+.lg b{color:#fff;font-size:13px;display:block;line-height:1.5}.lg small{font-size:9.5px;color:#91DA73;direction:ltr;display:block;text-align:right;line-height:1.3}
+.nv{margin-top:14px;display:flex;flex-direction:column;gap:3px}
+.nv div{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:11px;font-weight:500;font-size:13px}
+.nv .on{background:rgba(145,218,115,.14);color:#fff;box-shadow:inset -3px 0 0 #91DA73}.nv .on svg{color:#91DA73}
+.nv em{margin-right:auto;font-style:normal;font-size:10.5px;background:#91DA73;color:#0E3338;font-weight:800;padding:1px 8px;border-radius:999px}
+.nv h6{font-size:10.5px;color:#7f9a97;font-weight:600;margin:14px 12px 4px}
+.me{margin-top:auto;padding:11px;border-radius:14px;background:rgba(255,255,255,.06);display:flex;gap:10px;align-items:center}
+.me .av{width:34px;height:34px;border-radius:50%;background:#91DA73;color:#0E3338;display:grid;place-items:center;font-weight:800}
+.me b{color:#fff;font-size:12px;display:block}.me small{font-size:10.5px;color:#91DA73}
+.main{flex:1;padding:18px 22px;display:flex;flex-direction:column;gap:13px;min-width:0}
+.tp{display:flex;align-items:center;gap:12px}.tp h1{font-size:21px;font-weight:800;color:var(--navy)}.tp small{display:block;color:var(--mut);font-size:11.5px;margin-top:2px}.tp .sp{flex:1}
+.srch{width:240px;height:38px;border-radius:12px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;gap:8px;padding:0 12px;color:var(--mut)}
+.btn{height:38px;padding:0 16px;border-radius:12px;background:linear-gradient(135deg,#165A54,#0E3338);color:#fff;font-weight:700;display:flex;align-items:center;gap:7px;font-size:12.5px}
+.btn.o{background:#fff;color:var(--ft);border:1px solid var(--line)}
+.kp{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.k{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px 16px;display:flex;align-items:center;gap:12px}
+.k .ic{width:40px;height:40px;border-radius:12px;background:#E4F2EA;color:var(--ft);display:grid;place-items:center}
+.k b{font-size:24px;font-weight:800;color:var(--navy);display:block;line-height:1.1}.k span{color:var(--mut);font-size:11.5px}
+.k em{font-style:normal;margin-right:auto;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;align-self:flex-start;background:#E4F2EA;color:#23643D}
+.k em.w{background:#FBF0D6;color:#8B6417}
+.r{display:flex;gap:12px}.r:last-child{flex:1}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 16px;min-width:0}
+.card h3{font-size:14px;font-weight:700;color:var(--navy);display:flex;align-items:center;justify-content:space-between}
+.card h3 a{font-size:11.5px;color:var(--ft);font-weight:600}
+table{width:100%;border-collapse:collapse;margin-top:8px}th{text-align:right;font-size:11px;color:var(--mut);font-weight:600;padding:5px 6px;border-bottom:1px solid var(--line)}
+td{padding:11px 6px;border-bottom:1px solid #EEF3F2;font-size:12px;vertical-align:middle}tr:last-child td{border:0}
+.pp{display:flex;align-items:center;gap:9px}.pp i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:12px;color:#0E3338;font-style:normal;flex:none}
+.pp b{display:block;font-size:12px}.pp small{color:var(--mut);font-size:10.5px}
+.pill{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.g{background:#E4F2EA;color:#23643D}.y{background:#FBF0D6;color:#8B6417}.b{background:#E1ECF4;color:#2E5C86}.rd{background:#FBE3DE;color:#B2432F}
+.q{display:flex;flex-direction:column;gap:9px;margin-top:9px}
+.qi{display:flex;align-items:center;gap:10px;padding:11px 12px;border:1px solid #E8EFED;border-radius:14px;background:#FAFCFB}
+.qi .ty{width:32px;height:32px;border-radius:10px;background:#E4F2EA;color:var(--ft);display:grid;place-items:center;flex:none}.qi .ty svg{width:17px;height:17px}
+.qi b{font-size:12px;display:block}.qi small{font-size:10.5px;color:var(--mut)}
+.qi .ac{margin-right:auto;display:flex;gap:6px}.qi .ac span{width:28px;height:28px;border-radius:9px;display:grid;place-items:center}.qi .ac svg{width:15px;height:15px}
+.ok{background:#E4F2EA;color:#23643D}.no{background:#FBE3DE;color:#B2432F}
+.ex{margin-top:8px;display:flex;flex-direction:column;gap:7px}
+.exi{display:flex;align-items:center;gap:10px;font-size:11.5px;padding:12px 0;border-bottom:1px dashed #E3ECEA}.exi:last-child{border:0}
+.exi small{color:var(--mut);display:block;font-size:10.5px}
+.dp{margin-top:12px;display:flex;flex-direction:column;gap:13px}
+.dr{display:grid;grid-template-columns:96px 1fr 26px;align-items:center;gap:8px;font-size:11.5px}
+.dr .bar{height:9px;background:#E8F0EE;border-radius:9px;overflow:hidden}.dr .bar i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,#165A54,#3FB25A)}
+.sh{margin-top:12px;display:grid;grid-template-columns:78px repeat(5,1fr);gap:7px;font-size:10.5px}
+.sh .h{color:var(--mut);font-weight:600;text-align:center;padding-bottom:2px}.sh .t{font-weight:600;display:flex;align-items:center}
+.sh span.s{height:34px;border-radius:8px;display:grid;place-items:center;font-weight:600;font-size:10.5px}
+.m{background:#DDF0E3;color:#1D5B36}.e{background:#E1ECF4;color:#2E5C86}.n{background:#E9E4F4;color:#5A44A0}.o{background:#F0F3F2;color:#9AAAAA}
+.sample{left:60px;color:#fff;bottom:16px}
+</style></head><body>
+<div class="browser">
+ <div class="chrome"><b></b><b></b><b></b><div class="url">hr.met-explorers.example</div></div>
+ <div class="page">
+  <div class="sb"><div class="lg"><u data-logo="38"></u><div><b>کاوشگران فناوری خاورمیانه</b><small>Middle East Technology Explorers</small></div></div>
+   <div class="nv"><div class="on"><i data-i="grid"></i>نمای کلی سازمان</div><div><i data-i="users"></i>کارکنان</div><div><i data-i="clock"></i>حضور و غیاب<em>۷</em></div><div><i data-i="calendar"></i>شیفت‌ها</div><div><i data-i="inbox"></i>صف تأیید<em>۱۴</em></div><div><i data-i="file"></i>اسناد کارکنان</div><div><i data-i="wallet"></i>آماده‌سازی حقوق</div><h6>مدیریت</h6><div><i data-i="shield"></i>نقش‌ها و دسترسی‌ها</div><div><i data-i="list"></i>گزارش ممیزی</div></div>
+   <div class="me"><div class="av">ن</div><div><b>نیلوفر صالحی</b><small>کارشناس منابع انسانی</small></div></div></div>
+  <div class="main">
+   <div class="tp"><div><h1>نمای کلی سازمان</h1><small>یکشنبه، ۲۶ مهر ۱۴۰۵ · همه‌ی دپارتمان‌ها</small></div><div class="sp"></div><div class="srch"><i data-i="search" data-s="16"></i>جست‌وجوی کارمند یا درخواست</div><div class="btn o"><i data-i="download" data-s="16"></i>خروجی</div><div class="btn"><i data-i="plus" data-s="16"></i>کارمند جدید</div></div>
+   <div class="kp">
+    <div class="k"><div class="ic"><i data-i="users"></i></div><div><b>۱۸۶</b><span>کارمند فعال</span></div><em>۷ دپارتمان</em></div>
+    <div class="k"><div class="ic"><i data-i="check"></i></div><div><b>۱۶۴</b><span>حاضر امروز</span></div><em>۸۸٪</em></div>
+    <div class="k"><div class="ic"><i data-i="plane"></i></div><div><b>۹</b><span>مرخصی / مأموریت</span></div><em>۴ مأموریت</em></div>
+    <div class="k"><div class="ic"><i data-i="clock"></i></div><div><b>۷</b><span>استثنای حضور</span></div><em class="w">نیازمند بررسی</em></div>
+   </div>
+   <div class="r">
+    <div class="card" style="flex:1.65"><h3>دفترچه‌ی کارکنان<a>مشاهده همه ←</a></h3>
+     <table><tr><th>کارمند</th><th>دپارتمان</th><th>سمت</th><th>وضعیت</th><th>مدیر مستقیم</th></tr>
+      <tr><td><div class="pp"><i style="background:#CFEBD8">س</i><div><b>سارا موسوی</b><small>EMP-1042</small></div></div></td><td>مهندسی</td><td>مهندس نرم‌افزار</td><td><span class="pill g">حاضر</span></td><td>مینا رحیمی</td></tr>
+      <tr><td><div class="pp"><i style="background:#D6E6F2">ع</i><div><b>علی‌رضا نوروزی</b><small>EMP-1017</small></div></div></td><td>مهندسی</td><td>مهندس ارشد</td><td><span class="pill g">حاضر</span></td><td>مینا رحیمی</td></tr>
+      <tr><td><div class="pp"><i style="background:#F3E5C4">ک</i><div><b>کامران یزدانی</b><small>EMP-0988</small></div></div></td><td>داده و هوش مصنوعی</td><td>دانشمند داده</td><td><span class="pill b">مأموریت</span></td><td>رضا امیری</td></tr>
+      <tr><td><div class="pp"><i style="background:#E4D9F0">ل</i><div><b>لیلا فتحی</b><small>EMP-1103</small></div></div></td><td>عملیات</td><td>کارشناس پشتیبانی</td><td><span class="pill y">مرخصی</span></td><td>حامد اکبری</td></tr>
+      <tr><td><div class="pp"><i style="background:#CFEBD8">پ</i><div><b>پریسا عباسی</b><small>EMP-1121</small></div></div></td><td>محصول</td><td>مدیر محصول</td><td><span class="pill g">حاضر</span></td><td>نیما شریفی</td></tr>
+      <tr><td><div class="pp"><i style="background:#F3D9D3">ح</i><div><b>حامد اکبری</b><small>EMP-0921</small></div></div></td><td>عملیات</td><td>سرپرست شیفت</td><td><span class="pill g">حاضر</span></td><td>سهیلا کریمی</td></tr>
+     </table></div>
+    <div class="card" style="flex:1"><h3>صف تأیید<a>۱۴ درخواست</a></h3>
+     <div class="q">
+      <div class="qi"><div class="ty"><i data-i="calendar"></i></div><div><b>سارا موسوی · مرخصی استحقاقی</b><small>۱۲ تا ۱۴ آبان · ۳ روز · مدیر: مینا رحیمی</small></div><div class="ac"><span class="ok"><i data-i="check"></i></span><span class="no"><i data-i="x"></i></span></div></div>
+      <div class="qi"><div class="ty"><i data-i="clock"></i></div><div><b>حامد اکبری · اضافه‌کار</b><small>۴ ساعت · ۲۵ مهر · نیازمند تأیید HR</small></div><div class="ac"><span class="ok"><i data-i="check"></i></span><span class="no"><i data-i="x"></i></span></div></div>
+      <div class="qi"><div class="ty"><i data-i="plane"></i></div><div><b>کامران یزدانی · مأموریت</b><small>شیراز · ۳ روز · ۳۰ مهر تا ۲ آبان</small></div><div class="ac"><span class="ok"><i data-i="check"></i></span><span class="no"><i data-i="x"></i></span></div></div>
+      <div class="qi"><div class="ty"><i data-i="calendar"></i></div><div><b>لیلا فتحی · مرخصی ساعتی</b><small>امروز ۱۴:۰۰ تا ۱۶:۰۰</small></div><div class="ac"><span class="ok"><i data-i="check"></i></span><span class="no"><i data-i="x"></i></span></div></div>
+      <div class="qi"><div class="ty"><i data-i="plane"></i></div><div><b>داوود نظری · مأموریت میدانی</b><small>کرج · ۱ روز · ۲۷ مهر</small></div><div class="ac"><span class="ok"><i data-i="check"></i></span><span class="no"><i data-i="x"></i></span></div></div>
+     </div></div>
+   </div>
+   <div class="r">
+    <div class="card" style="flex:1"><h3>استثناهای حضور و غیاب<a>امروز</a></h3>
+     <div class="ex">
+      <div class="exi"><span class="pill rd">خروج ثبت‌نشده</span><div><b>دیروز ۲۵ مهر</b><small>نرگس رحیمی · عملیات</small></div></div>
+      <div class="exi"><span class="pill y">تأخیر ۲۲ دقیقه</span><div><b>امروز ۰۸:۲۲</b><small>پویا مرادی · پشتیبانی</small></div></div>
+      <div class="exi"><span class="pill y">ورود خارج از محدوده</span><div><b>امروز ۰۸:۴۰</b><small>داوود نظری · مأموریت میدانی</small></div></div>
+      <div class="exi"><span class="pill rd">خروج ثبت‌نشده</span><div><b>۲۴ مهر</b><small>مهسا جلالی · مالی</small></div></div>
+     </div></div>
+    <div class="card" style="flex:1"><h3>کارکنان به تفکیک دپارتمان<a>۱۸۶ نفر</a></h3>
+     <div class="dp">
+      <div class="dr"><span>مهندسی</span><div class="bar"><i style="width:100%"></i></div><b>۶۲</b></div>
+      <div class="dr"><span>عملیات</span><div class="bar"><i style="width:50%"></i></div><b>۳۱</b></div>
+      <div class="dr"><span>فروش</span><div class="bar"><i style="width:47%"></i></div><b>۲۹</b></div>
+      <div class="dr"><span>داده و هوش مصنوعی</span><div class="bar"><i style="width:39%"></i></div><b>۲۴</b></div>
+      <div class="dr"><span>محصول</span><div class="bar"><i style="width:29%"></i></div><b>۱۸</b></div>
+      <div class="dr"><span>مالی</span><div class="bar"><i style="width:23%"></i></div><b>۱۴</b></div>
+      <div class="dr"><span>منابع انسانی</span><div class="bar"><i style="width:13%"></i></div><b>۸</b></div>
+     </div></div>
+    <div class="card" style="flex:1.25"><h3>برنامه‌ریزی شیفت · هفته‌ی جاری<a>ویرایش</a></h3>
+     <div class="sh">
+      <div></div><div class="h">شنبه</div><div class="h">یکشنبه</div><div class="h">دوشنبه</div><div class="h">سه‌شنبه</div><div class="h">چهارشنبه</div>
+      <div class="t">پشتیبانی</div><span class="s m">صبح</span><span class="s m">صبح</span><span class="s e">عصر</span><span class="s e">عصر</span><span class="s m">صبح</span>
+      <div class="t">عملیات</div><span class="s e">عصر</span><span class="s n">شب</span><span class="s n">شب</span><span class="s o">استراحت</span><span class="s m">صبح</span>
+      <div class="t">مرکز داده</div><span class="s n">شب</span><span class="s n">شب</span><span class="s o">استراحت</span><span class="s m">صبح</span><span class="s m">صبح</span>
+      <div class="t">انبار</div><span class="s m">صبح</span><span class="s e">عصر</span><span class="s e">عصر</span><span class="s e">عصر</span><span class="s o">استراحت</span>
+     </div></div>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="sample">نمونه‌ی نمایشی · نام‌ها و داده‌ها فرضی هستند</div>
+<script src="icons.js"></script><script src="logo.js"></script></body></html>

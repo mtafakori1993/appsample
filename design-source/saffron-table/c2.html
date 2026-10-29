@@ -1,0 +1,77 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="c.css">
+<style>
+.b1{left:55px;top:62px}.b2{left:488px;top:62px}
+.side{right:70px;top:300px;width:330px}.side h2{font-size:46px}.side p{font-size:17.5px;margin-top:22px}.tags span{font-size:13.5px;padding:8px 15px}
+.hero{height:262px;position:relative;margin-top:-46px;background:url(img/c_kabab.jpg) center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,14,11,.55),transparent 28%,transparent 55%,rgba(21,14,11,1))}
+.hero>*{position:absolute;z-index:3}.hero .status{top:0;left:0;right:0}
+.tb{top:54px;width:40px;height:40px;border-radius:14px;background:rgba(21,14,11,.55);backdrop-filter:blur(10px);display:grid;place-items:center;color:#fff}
+.body{padding:0 20px;position:relative;z-index:4;margin-top:-34px}
+.t1{display:flex;justify-content:space-between;align-items:flex-start}.t1 h2{font-size:21px;font-weight:800;line-height:1.35}.t1 .p{font-size:18px;font-weight:800;color:var(--saf);white-space:nowrap}.t1 .p small{font-size:11px;color:var(--mut);font-weight:500}
+.ds{font-size:12px;color:var(--mut);line-height:1.8;margin-top:6px}
+.ing{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.ing span{font-size:11px;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--saf2)}
+h5{font-size:13.5px;font-weight:700;margin-top:12px;display:flex;justify-content:space-between}h5 small{font-size:11px;color:var(--mut);font-weight:500}
+.pt{display:flex;gap:8px;margin-top:8px}.pt div{flex:1;border:1px solid var(--line);background:var(--card);border-radius:16px;padding:9px 12px;font-size:12px}.pt b{display:block;font-size:13px}.pt small{color:var(--mut);font-size:10.5px}
+.pt .on{border:1.5px solid var(--saf);background:rgba(232,169,45,.1)}.pt .on b{color:var(--saf2)}
+.ex{margin-top:7px;display:flex;flex-direction:column;gap:7px}.ex div{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 12px;font-size:12.5px}
+.ex .cb{width:20px;height:20px;border-radius:7px;border:1.5px solid #5a4333;display:grid;place-items:center;flex:none}.ex .on .cb{background:var(--saf);border-color:var(--saf);color:#2A1408}.ex .cb svg{width:13px;height:13px;stroke-width:3}
+.ex span.pr{margin-right:auto;color:var(--mut);font-size:11.5px}.ex .on{border-color:rgba(232,169,45,.5)}
+.nt{margin-top:10px;height:46px;border-radius:14px;border:1.5px dashed #4a3220;color:var(--mut);font-size:12px;display:flex;align-items:center;gap:9px;padding:0 13px}.nt svg{color:var(--saf)}
+.cta{position:absolute;bottom:0;left:0;right:0;height:92px;background:rgba(26,17,12,.98);border-top:1px solid var(--line);padding:12px 16px 0;display:flex;gap:10px;z-index:8}
+.qty{display:flex;align-items:center;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:18px;height:52px;padding:0 6px}.qty i{width:34px;height:34px;border-radius:12px;display:grid;place-items:center;color:var(--saf)}.qty b{width:22px;text-align:center;font-size:16px}
+.add{flex:1;height:52px;border-radius:18px;background:linear-gradient(135deg,#F0B53A,#E8A92D 50%,#C9501F);color:#2A1408;font-weight:800;font-size:14.5px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;box-shadow:0 14px 24px -12px rgba(232,169,45,.7)}
+/* cart */
+.ch{display:flex;align-items:center;gap:12px;padding:8px 20px 0}.ch .bk{width:38px;height:38px;border-radius:13px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center}.ch h1{font-size:19px;font-weight:800}.ch small{display:block;font-size:11px;color:var(--mut);font-weight:400}
+.seg{margin:12px 20px 0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:4px;display:flex}
+.seg div{flex:1;text-align:center;font-size:12.5px;font-weight:600;padding:8px 0;border-radius:12px;color:var(--mut);display:flex;gap:6px;align-items:center;justify-content:center}.seg svg{width:15px;height:15px}.seg .on{background:var(--saf);color:#2A1408;font-weight:700}
+.ad{margin:9px 20px 0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 12px;display:flex;gap:11px;align-items:center}
+.ad .ic{width:34px;height:34px;border-radius:11px;background:rgba(232,169,45,.14);color:var(--saf);display:grid;place-items:center;flex:none}.ad b{font-size:12.5px;display:block}.ad small{font-size:11px;color:var(--mut)}
+.it{margin:9px 20px 0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px;display:flex;gap:11px}
+.it .im{width:62px;height:62px;border-radius:14px;background-size:cover;background-position:center;flex:none}
+.it b{font-size:13px;display:block}.it small{font-size:10.5px;color:var(--mut);display:block;margin-top:2px}.it .r{display:flex;justify-content:space-between;align-items:center;margin-top:7px}.it .r span{font-size:12.5px;font-weight:800;color:var(--saf)}
+.st{display:flex;align-items:center;gap:2px;background:#1a110c;border:1px solid var(--line);border-radius:12px;padding:1px 3px}.st i{width:24px;height:24px;display:grid;place-items:center;color:var(--saf)}.st i svg{width:14px;height:14px}.st b{width:18px;text-align:center;font-size:12px;margin:0}
+.dc{margin:9px 20px 0;display:flex;gap:8px}.dc .f{flex:1;height:42px;border-radius:14px;border:1.5px dashed rgba(232,169,45,.5);background:rgba(232,169,45,.06);display:flex;align-items:center;gap:8px;padding:0 12px;font-size:12px;color:var(--saf2);direction:ltr;font-weight:700;letter-spacing:.08em;font-feature-settings:normal}.dc .f svg{width:16px;height:16px;color:var(--ok)}
+.dc .a{padding:0 14px;height:42px;border-radius:14px;background:var(--card2);border:1px solid var(--line);display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--ok)}
+.sum{margin:9px 20px 0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px 14px}
+.sum div{display:flex;justify-content:space-between;font-size:12px;padding:4px 0;color:var(--mut)}.sum div b{color:var(--cream);font-weight:600}
+.sum .d b{color:var(--ok)}.sum .t{border-top:1px dashed #4a3220;margin-top:5px;padding-top:8px;color:var(--cream);font-weight:700;font-size:14px}.sum .t b{color:var(--saf);font-size:15px;font-weight:800}
+.lo{margin:9px 20px 0;padding:10px 13px;border-radius:16px;background:linear-gradient(135deg,#3A2412,#2A1C14);border:1px solid #4a3220;display:flex;gap:11px;align-items:center;color:var(--saf)}.lo b{font-size:12.5px;display:block;color:var(--cream)}.lo small{font-size:11px;color:var(--mut)}
+.cta2{position:absolute;bottom:0;left:0;right:0;height:104px;background:rgba(26,17,12,.98);border-top:1px solid var(--line);padding:10px 16px 0;z-index:8;text-align:center}
+.cta2 .add{width:100%;justify-content:center;gap:10px;height:48px}.cta2 small{display:block;font-size:10.5px;color:var(--mut);margin-top:4px}
+</style></head><body>
+<div class="bezel b1"><div class="phone">
+ <div class="island"></div>
+ <div class="hero"><div class="status"><span class="num">۹:۴۱</span><span class="r"><i data-i="signal" data-s="16"></i><i data-i="wifi" data-s="16"></i><i data-i="battery" data-s="22"></i></span></div><div class="tb" style="right:16px"><i data-i="chr"></i></div><div class="tb" style="left:16px"><i data-i="heart"></i></div></div>
+ <div class="body">
+  <div class="t1"><h2>چلوکباب کوبیده‌ی ویژه</h2><div class="p">۲۸۵٬۰۰۰ <small>تومان</small></div></div>
+  <div class="ds">دو سیخ کباب کوبیده‌ی گوسفندی با برنج ایرانی زعفرانی، کره و گوجه‌ی کبابی.</div>
+  <div class="ing"><span>گوشت گوسفند</span><span>زعفران</span><span>برنج ایرانی</span><span>سماق</span></div>
+  <h5>اندازه‌ی پرس</h5>
+  <div class="pt"><div class="on"><b>یک‌نفره</b><small>۲ سیخ · ۲۸۵٬۰۰۰</small></div><div><b>دونفره</b><small>۴ سیخ · ۵۴۰٬۰۰۰</small></div></div>
+  <h5>افزودنی‌ها<small>اختیاری</small></h5>
+  <div class="ex"><div class="on"><span class="cb"><i data-i="check"></i></span>نان سنگک<span class="pr"><bdi dir="ltr">+۲۰٬۰۰۰</bdi></span></div><div class="on"><span class="cb"><i data-i="check"></i></span>ماست و خیار<span class="pr"><bdi dir="ltr">+۴۵٬۰۰۰</bdi></span></div><div><span class="cb"></span>سالاد شیرازی<span class="pr"><bdi dir="ltr">+۶۰٬۰۰۰</bdi></span></div><div><span class="cb"></span>سیخ اضافه<span class="pr"><bdi dir="ltr">+۱۲۵٬۰۰۰</bdi></span></div></div>
+  <div class="nt"><i data-i="message" data-s="17"></i>توضیحات برای آشپزخانه (اختیاری)</div>
+ </div>
+ <div class="cta"><div class="qty"><i data-i="minus"></i><b class="num">۲</b><i data-i="plus"></i></div><div class="add"><span>افزودن به سبد</span><span>۷۰۰٬۰۰۰ تومان</span></div></div>
+ <div class="gesture"></div>
+</div></div>
+<div class="bezel b2"><div class="phone">
+ <div class="island"></div>
+ <div class="status"><span class="num">۹:۴۱</span><span class="r"><i data-i="signal" data-s="16"></i><i data-i="wifi" data-s="16"></i><i data-i="battery" data-s="22"></i></span></div>
+ <div class="ch"><div class="bk"><i data-i="chr"></i></div><div><h1>سبد خرید</h1><small>۴ آیتم از سفران</small></div></div>
+ <div class="seg"><div class="on"><i data-i="truck"></i>ارسال</div><div><i data-i="bag"></i>تحویل حضوری</div></div>
+ <div class="ad"><div class="ic"><i data-i="pin"></i></div><div><b>سعادت‌آباد، خیابان سرو غربی، پلاک ۱۲</b><small>توضیحات: زنگ واحد ۴ را بزنید</small></div></div>
+ <div class="it"><div class="im" style="background-image:url(img/c_kabab.jpg)"></div><div style="flex:1"><b>چلوکباب کوبیده‌ی ویژه</b><small>یک‌نفره · نان سنگک، ماست و خیار</small><div class="r"><span>۷۰۰٬۰۰۰ تومان</span><div class="st"><i data-i="minus"></i><b class="num">۲</b><i data-i="plus"></i></div></div></div></div>
+ <div class="it"><div class="im" style="background-image:url(img/c_drink.jpg)"></div><div style="flex:1"><b>دوغ محلی</b><small>لیوان · بدون افزودنی</small><div class="r"><span>۷۰٬۰۰۰ تومان</span><div class="st"><i data-i="minus"></i><b class="num">۲</b><i data-i="plus"></i></div></div></div></div>
+ <div class="dc"><div class="f"><i data-i="check"></i>SAFFRON10</div><div class="a">اعمال شد</div></div>
+ <div class="sum"><div>جمع اقلام<b>۷۷۰٬۰۰۰ تومان</b></div><div class="d">تخفیف ۱۰٪ (SAFFRON10)<b><bdi dir="ltr">−۷۷٬۰۰۰</bdi> تومان</b></div><div>هزینه‌ی ارسال<b>۴۵٬۰۰۰ تومان</b></div><div class="t">مبلغ نهایی<b>۷۳۸٬۰۰۰ تومان</b></div></div>
+ <div class="lo"><i data-i="gift" data-s="18"></i><div><b>۷۳ امتیاز باشگاه سفران</b><small>با ثبت این سفارش به حساب شما اضافه می‌شود</small></div></div>
+ <div class="cta2"><div class="add">ثبت سفارش · ۷۳۸٬۰۰۰ تومان</div><small>پرداخت در این نسخه‌ی نمایشی شبیه‌سازی می‌شود</small></div>
+ <div class="gesture"></div>
+</div></div>
+<div class="side"><div class="logo"><div class="mk">S</div></div>
+ <h2>سفران<small>SAFFRON TABLE</small></h2>
+ <p>صفحه‌ی غذا با اندازه‌ی پرس و افزودنی‌ها، و سبد خرید با ارسال، کد تخفیف و جمع‌بندی شفاف مبلغ.</p>
+ <div class="tags"><span>انتخاب اندازه</span><span>افزودنی‌ها</span><span>کد تخفیف</span></div></div>
+<div class="sample">نمونه‌ی نمایشی · رستوران، منو و قیمت‌ها فرضی هستند · پرداخت شبیه‌سازی‌شده</div>
+<script src="icons.js"></script></body></html>

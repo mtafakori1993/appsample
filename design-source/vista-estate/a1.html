@@ -1,0 +1,98 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+:root{--navy:#021C25;--teal:#0E3338;--gold:#B8924A;--gold2:#E3C98F;--ivory:#FBF8F2;--ink:#10201F;--mut:#6B7774;--line:#E7E1D4}
+body{background:radial-gradient(900px 700px at 25% 40%,rgba(184,146,74,.22),transparent 60%),linear-gradient(135deg,#021C25,#0E3338 70%,#091E27)}
+.bezel{left:215px;top:62px}
+.phone{background:var(--ivory);color:var(--ink)}
+.status{color:var(--ink)}
+.gesture{background:#10201F}
+.hd{display:flex;align-items:center;justify-content:space-between;padding:6px 20px 0}
+.who{display:flex;align-items:center;gap:10px}
+.av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--teal),#165A54);color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px}
+.who small{display:block;font-size:11px;color:var(--mut)}.who b{font-size:14px}
+.ib{width:40px;height:40px;border-radius:14px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;position:relative}
+.ib em{position:absolute;top:9px;right:10px;width:8px;height:8px;border-radius:50%;background:var(--gold);border:2px solid #fff}
+h1{font-size:23px;line-height:1.3;font-weight:800;padding:10px 20px 0;color:var(--navy)}
+h1 span{color:var(--gold)}
+.seg{margin:14px 20px 0;background:#EFE9DC;border-radius:16px;padding:4px;display:flex}
+.seg div{flex:1;text-align:center;font-size:13px;font-weight:600;padding:9px 0;border-radius:12px;color:var(--mut)}
+.seg .on{background:var(--teal);color:#fff;box-shadow:0 6px 14px -6px rgba(2,28,37,.6)}
+.sr{display:flex;gap:10px;margin:12px 20px 0}
+.sf{flex:1;height:48px;background:#fff;border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;gap:10px;padding:0 14px;color:var(--mut);font-size:13px}
+.fb{width:48px;height:48px;border-radius:16px;background:var(--gold);color:#fff;display:grid;place-items:center}
+.chips{display:flex;gap:8px;padding:12px 20px 0;overflow:hidden}
+.chips span{white-space:nowrap;font-size:12.5px;font-weight:600;padding:7px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#3b4a48}
+.chips .on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.feat{margin:10px 20px 0;height:188px;border-radius:26px;position:relative;overflow:hidden;background:url(img/test_villa.jpg) center/cover;box-shadow:0 24px 40px -22px rgba(2,28,37,.7)}
+.feat:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,28,37,.05) 35%,rgba(2,28,37,.88))}
+.feat>*{position:absolute;z-index:2}
+.badge{top:14px;right:14px;background:rgba(251,248,242,.92);color:var(--navy);font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:999px;display:flex;gap:5px;align-items:center}
+.badge svg{width:13px;height:13px;color:var(--gold)}
+.fav{top:12px;left:12px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.2);backdrop-filter:blur(8px);display:grid;place-items:center;color:#fff}
+.fi{right:16px;left:16px;bottom:14px;color:#fff}
+.fi h3{font-size:16.5px;font-weight:700}
+.fi .loc{font-size:12px;opacity:.85;display:flex;gap:4px;align-items:center;margin-top:2px}
+.fi .loc svg{width:14px;height:14px}
+.fi .pr{display:flex;align-items:end;justify-content:space-between;margin-top:8px}
+.fi .pr b{font-size:19px;color:var(--gold2)}.fi .pr b small{font-size:11px;font-weight:500;color:#fff;opacity:.85;margin-right:4px}
+.mt{display:flex;gap:12px;font-size:11.5px}.mt span{display:flex;gap:4px;align-items:center}.mt svg{width:15px;height:15px}
+.hood{margin:10px 20px 0;padding:11px 14px;border-radius:18px;background:var(--teal);color:#fff;display:flex;align-items:center;gap:12px}
+.hood .ic{width:36px;height:36px;border-radius:12px;background:rgba(145,218,115,.16);color:#91DA73;display:grid;place-items:center}
+.hood b{font-size:13px}.hood small{display:block;font-size:11px;opacity:.75;margin-top:1px}
+.hood .go{margin-right:auto;opacity:.8}
+.sec{display:flex;justify-content:space-between;align-items:center;padding:11px 20px 0}
+.sec b{font-size:15px}.sec a{font-size:12px;color:var(--gold);font-weight:600}
+.row{display:flex;gap:12px;padding:10px 20px 0;overflow:hidden}
+.c{flex:none;width:200px;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.c .im{height:70px;background-size:cover;background-position:center;position:relative}
+.c .im i{position:absolute;top:8px;left:8px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;color:var(--navy)}
+.c .im svg{width:15px;height:15px}
+.c .tx{padding:9px 12px 11px}.c h4{font-size:12.5px;font-weight:700}.c p{font-size:11px;color:var(--mut);margin-top:2px}.c b{display:block;font-size:13.5px;color:var(--teal);margin-top:5px}
+.nav{position:absolute;bottom:0;left:0;right:0;height:78px;background:rgba(255,255,255,.96);border-top:1px solid var(--line);display:flex;padding:8px 10px 0;justify-content:space-around;z-index:8}
+.nav div{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#8a9592;width:64px}
+.nav .on{color:var(--navy)}.nav .on i{background:var(--navy);color:var(--gold2)}
+.nav i{width:44px;height:30px;border-radius:12px;display:grid;place-items:center}
+.nav svg{width:21px;height:21px}
+/* side */
+.side{position:absolute;right:120px;top:250px;width:500px;color:#fff}
+.logo{display:flex;align-items:center;gap:16px}
+.mark{width:68px;height:68px;border-radius:20px;background:linear-gradient(135deg,#E3C98F,#B8924A);display:grid;place-items:center;color:var(--navy);font-weight:900;font-size:36px;font-family:Georgia,serif}
+.side h2{font-size:58px;font-weight:800;line-height:1.1}.side h2 small{display:block;font-size:20px;font-weight:500;letter-spacing:.35em;color:var(--gold2);margin-top:6px;direction:ltr;text-align:right}
+.side p{margin-top:34px;font-size:22px;line-height:1.9;opacity:.88}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.tags span{font-size:15px;padding:9px 18px;border:1px solid rgba(227,201,143,.45);border-radius:999px;color:var(--gold2)}
+.sample{right:130px;color:#fff}
+</style></head><body>
+<div class="bezel"><div class="phone">
+ <div class="island"></div>
+ <div class="status"><span class="num">۹:۴۱</span><span class="r"><i data-i="signal" data-s="16"></i><i data-i="wifi" data-s="16"></i><i data-i="battery" data-s="22"></i></span></div>
+ <div class="hd"><div class="who"><div class="av">م</div><div><small>خوش آمدید</small><b>مهسا کریمی</b></div></div><div class="ib"><i data-i="bell"></i><em></em></div></div>
+ <h1>خانه‌ای که <span>شایسته‌ی شما</span> باشد</h1>
+ <div class="seg"><div class="on">خرید</div><div>رهن و اجاره</div><div>اجاره</div></div>
+ <div class="sr"><div class="sf"><i data-i="search"></i>محله، خیابان یا نام پروژه</div><div class="fb"><i data-i="sliders"></i></div></div>
+ <div class="chips"><span class="on">الهیه</span><span>زعفرانیه</span><span>نیاوران</span><span>فرمانیه</span><span>جردن</span><span>لواسان</span></div>
+ <div class="feat">
+  <div class="badge"><i data-i="star"></i>منتخب مشاور</div><div class="fav"><i data-i="heart" data-s="18"></i></div>
+  <div class="fi"><h3>آپارتمان تراس‌دار با چشم‌انداز البرز</h3><div class="loc"><i data-i="pin"></i>الهیه، تهران</div>
+   <div class="pr"><div class="mt"><span><i data-i="bed"></i>۴ خواب</span><span><i data-i="area"></i><span class="num">۳۲۰</span> متر</span><span><i data-i="car"></i>۲ پارکینگ</span></div><b>۱۸۶<small>میلیارد تومان</small></b></div></div>
+ </div>
+ <div class="hood"><div class="ic"><i data-i="map"></i></div><div><b>محله‌ی الهیه</b><small>۱۴ ملک فعال · ۸ دقیقه تا بزرگراه صدر</small></div><i class="go" data-i="chl"></i></div>
+ <div class="sec"><b>تازه‌های این هفته</b><a>مشاهده همه</a></div>
+ <div class="row">
+  <div class="c"><div class="im" style="background-image:url(img/a_villa2.jpg)"><i data-i="heart"></i></div><div class="tx"><h4>ویلای استخردار، لواسان</h4><b>۹۴ میلیارد تومان</b></div></div>
+  <div class="c"><div class="im" style="background-image:url(img/a_living.jpg)"><i data-i="heart"></i></div><div class="tx"><h4>آپارتمان ۲۱۰ متری، زعفرانیه</h4><b>۶۸ میلیارد تومان</b></div></div>
+  <div class="c"><div class="im" style="background-image:url(img/a_tower.jpg)"></div></div>
+ </div>
+ <div class="nav"><div class="on"><i data-i="compass"></i>کاوش</div><div><i data-i="heart"></i>ذخیره‌ها</div><div><i data-i="compare"></i>مقایسه</div><div><i data-i="calendar"></i>بازدیدها</div><div><i data-i="user"></i>پروفایل</div></div>
+ <div class="gesture"></div>
+</div></div>
+<div class="side"><div class="logo"><div class="mark">V</div></div>
+ <h2 style="margin-top:28px">ویستا<small>VISTA ESTATE</small></h2>
+ <p>اپلیکیشن اندروید برای کاوش املاک لوکس تهران؛ جست‌وجوی پیشرفته، ذخیره و مقایسه‌ی ملک و درخواست بازدید با مشاور اختصاصی.</p>
+ <div class="tags"><span>خرید · رهن و اجاره</span><span>مقایسه‌ی ملک</span><span>رزرو بازدید</span></div></div>
+<div class="sample">نمونه‌ی نمایشی · داده‌ها و املاک فرضی هستند</div>
+<script>
+// compass icon not in sprite: patch
+</script>
+<script src="icons.js"></script>
+</body></html>

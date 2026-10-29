@@ -1,0 +1,79 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="c.css">
+<style>
+.browser{background:#120C09;color:var(--cream);font-size:12.5px;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 70px 120px -30px rgba(0,0,0,.8)}
+.chrome{direction:ltr;background:#2a1d15}.chrome .url{background:#1a110c;color:#a8937f}.chrome b:nth-child(1){background:#ff5f57}.chrome b:nth-child(2){background:#febc2e}.chrome b:nth-child(3){background:#28c840}
+.sb{width:214px;background:#1A110C;border-left:1px solid var(--line);padding:20px 14px;display:flex;flex-direction:column;flex:none}
+.lg{display:flex;align-items:center;gap:11px;padding:0 4px 18px;border-bottom:1px solid var(--line)}.lg .m{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#F5D08A,#E8A92D 55%,#C9501F);display:grid;place-items:center;color:#2A1408;font:700 22px Georgia,serif}
+.lg b{font-size:17px;display:block}.lg small{font:500 9.5px Georgia,serif;letter-spacing:.25em;color:var(--saf)}
+.nv{margin-top:14px;display:flex;flex-direction:column;gap:3px}.nv div{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:11px;font-weight:500;font-size:13px;color:#b9a591}
+.nv .on{background:rgba(232,169,45,.14);color:var(--cream);box-shadow:inset -3px 0 0 var(--saf)}.nv .on svg{color:var(--saf)}
+.nv em{margin-right:auto;font-style:normal;font-size:10.5px;background:var(--ember);color:#fff;font-weight:800;padding:1px 8px;border-radius:999px}
+.me{margin-top:auto;padding:11px;border-radius:14px;background:var(--card);border:1px solid var(--line);display:flex;gap:10px;align-items:center}.me .av{width:34px;height:34px;border-radius:50%;background:var(--saf);color:#2A1408;display:grid;place-items:center;font-weight:800}.me b{font-size:12px;display:block}.me small{font-size:10.5px;color:var(--saf)}
+.main{flex:1;padding:18px 22px;display:flex;flex-direction:column;gap:13px;min-width:0}
+.tp{display:flex;align-items:center;gap:12px}.tp h1{font-size:21px;font-weight:800}.tp small{display:block;color:var(--mut);font-size:11.5px;margin-top:2px}.tp .sp{flex:1}
+.open{display:flex;align-items:center;gap:8px;background:rgba(108,192,112,.12);border:1px solid rgba(108,192,112,.35);color:var(--ok);font-weight:700;border-radius:12px;padding:0 14px;height:38px;font-size:12.5px}.open i{width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.btn{height:38px;padding:0 16px;border-radius:12px;background:var(--saf);color:#2A1408;font-weight:800;display:flex;align-items:center;gap:7px;font-size:12.5px}
+.kp{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.k{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px 16px;display:flex;align-items:center;gap:12px}
+.k .ic{width:40px;height:40px;border-radius:12px;background:rgba(232,169,45,.14);color:var(--saf);display:grid;place-items:center}
+.k b{font-size:21px;font-weight:800;display:block;line-height:1.2}.k b small{font-size:11px;color:var(--mut);font-weight:500}.k span{color:var(--mut);font-size:11.5px}
+.body{display:flex;gap:14px;flex:1;min-height:0}
+.board{flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;min-width:0}
+.col{background:#19100B;border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:10px}
+.col h4{font-size:13px;font-weight:700;display:flex;justify-content:space-between;align-items:center}.col h4 span{font-size:11px;background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:0 9px;color:var(--saf2)}
+.col h4 u{text-decoration:none;display:flex;gap:7px;align-items:center}.col h4 i.d{width:9px;height:9px;border-radius:50%;display:block}
+.o{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:11px 12px}
+.o .h{display:flex;justify-content:space-between;align-items:center}.o .h b{font-size:13px}.o .h small{font-size:10.5px;color:var(--mut)}
+.o ul{list-style:none;margin-top:7px;font-size:11.5px;color:#d9c9b4;display:flex;flex-direction:column;gap:3px}
+.o .m{display:flex;justify-content:space-between;align-items:center;margin-top:9px}.o .m b{font-size:12.5px;color:var(--saf)}
+.tg{font-size:10.5px;font-weight:700;padding:2px 9px;border-radius:999px;display:inline-flex;gap:4px;align-items:center}.tg svg{width:12px;height:12px}
+.t1{background:rgba(232,169,45,.16);color:var(--saf2)}.t2{background:rgba(108,160,224,.16);color:#9CC3F0}
+.act{display:flex;gap:7px;margin-top:9px}.act div{flex:1;height:30px;border-radius:10px;display:grid;place-items:center;font-size:11.5px;font-weight:800}
+.acc{background:var(--saf);color:#2A1408}.rej{background:rgba(201,80,31,.16);color:#F0916A;border:1px solid rgba(201,80,31,.4)}.nxt{background:var(--card2);border:1px solid #5a4333;color:var(--saf2)}
+.tm{font-size:10.5px;color:var(--mut);display:flex;gap:4px;align-items:center}.tm svg{width:12px;height:12px}.tm.late{color:#F0916A}
+.right{width:330px;display:flex;flex-direction:column;gap:12px;flex:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 16px}
+.card h3{font-size:13.5px;font-weight:700;display:flex;justify-content:space-between}.card h3 a{font-size:11px;color:var(--saf);font-weight:600}
+.bars{display:flex;align-items:flex-end;gap:7px;height:92px;margin-top:12px;direction:ltr}
+.bars div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;height:100%;font-size:9.5px;color:var(--mut)}
+.bars i{display:block;width:100%;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,#E8A92D,#A9651C)}
+.bars .cur i{background:linear-gradient(180deg,#F5D08A,#E8A92D);box-shadow:0 0 0 1px rgba(245,208,138,.6)}
+.bs{margin-top:9px;display:flex;flex-direction:column;gap:9px}.bs div{display:flex;align-items:center;gap:10px;font-size:12px}
+.bs i{width:36px;height:36px;border-radius:10px;background-size:cover;background-position:center;flex:none}.bs b{display:block;font-size:12px}.bs small{color:var(--mut);font-size:10.5px}.bs span{margin-right:auto;font-weight:800;color:var(--saf);font-size:12.5px}
+.av2{margin-top:8px;display:flex;flex-direction:column;gap:7px}.av2 div{display:flex;align-items:center;justify-content:space-between;font-size:12px;padding:3px 0}
+.tgl{width:36px;height:20px;border-radius:20px;background:var(--ok);position:relative}.tgl:after{content:"";position:absolute;top:2px;right:2px;width:16px;height:16px;border-radius:50%;background:#fff}
+.tgl.off{background:#4a3b30}.tgl.off:after{right:auto;left:2px}
+.sample{left:60px;color:var(--cream);bottom:16px}
+</style></head><body>
+<div class="browser">
+ <div class="chrome"><b></b><b></b><b></b><div class="url">kitchen.saffron-table.example</div></div>
+ <div class="page">
+  <div class="sb"><div class="lg"><div class="m">S</div><div><b>سفران</b><small>SAFFRON TABLE</small></div></div>
+   <div class="nv"><div class="on"><i data-i="inbox"></i>صف سفارش‌ها<em>۳</em></div><div><i data-i="flame"></i>نمایشگر آشپزخانه</div><div><i data-i="utensils"></i>منو و موجودی</div><div><i data-i="tag"></i>قیمت و تخفیف</div><div><i data-i="map"></i>مناطق ارسال</div><div><i data-i="clock"></i>ساعات کاری</div><div><i data-i="chart"></i>گزارش فروش</div></div>
+   <div class="me"><div class="av">م</div><div><b>مهدی رضوی</b><small>مدیر رستوران</small></div></div></div>
+  <div class="main">
+   <div class="tp"><div><h1>صف سفارش‌ها</h1><small>یکشنبه، ۲۶ مهر ۱۴۰۵ · شعبه‌ی سعادت‌آباد</small></div><div class="sp"></div><div class="open"><i></i>دریافت سفارش آنلاین فعال است</div><div class="btn"><i data-i="plus" data-s="16"></i>ثبت سفارش تلفنی</div></div>
+   <div class="kp">
+    <div class="k"><div class="ic"><i data-i="wallet"></i></div><div><b>۱۲٬۸۵۰٬۰۰۰ <small>تومان</small></b><span>فروش امروز</span></div></div>
+    <div class="k"><div class="ic"><i data-i="bag"></i></div><div><b>۴۶</b><span>سفارش امروز</span></div></div>
+    <div class="k"><div class="ic"><i data-i="flame"></i></div><div><b>۹</b><span>سفارش فعال</span></div></div>
+    <div class="k"><div class="ic"><i data-i="clock"></i></div><div><b>۲۲ <small>دقیقه</small></b><span>میانگین زمان آماده‌سازی</span></div></div>
+   </div>
+   <div class="body">
+    <div class="board"><div class="col"><h4><u><i class="d" style="background:var(--saf)"></i>جدید</u><span>۴</span></h4><div class="o"><div class="h"><b>SF-1048</b><span class="tg t1"><i data-i="truck"></i>ارسال</span></div><ul><li>۲× چلوکباب کوبیده‌ی ویژه</li><li>۲× دوغ محلی</li></ul><div class="m"><b>۷۳۸٬۰۰۰</b><span class="tm"><i data-i="clock"></i>۱ دقیقه پیش</span></div><div class="act"><div class="acc">پذیرش</div><div class="rej">رد</div></div></div><div class="o"><div class="h"><b>SF-1049</b><span class="tg t2"><i data-i="bag"></i>تحویل حضوری</span></div><ul><li>۱× زرشک‌پلو با مرغ</li><li>۱× میرزاقاسمی</li></ul><div class="m"><b>۳۴۵٬۰۰۰</b><span class="tm"><i data-i="clock"></i>۳ دقیقه پیش</span></div><div class="act"><div class="acc">پذیرش</div><div class="rej">رد</div></div></div><div class="o"><div class="h"><b>SF-1050</b><span class="tg t1"><i data-i="truck"></i>ارسال</span></div><ul><li>۱× سلطانی</li></ul><div class="m"><b>۴۲۰٬۰۰۰</b><span class="tm"><i data-i="clock"></i>۴ دقیقه پیش</span></div><div class="act"><div class="acc">پذیرش</div><div class="rej">رد</div></div></div><div class="o"><div class="h"><b>SF-1051</b><span class="tg t1"><i data-i="truck"></i>ارسال</span></div><ul><li>۲× زرشک‌پلو با مرغ</li><li>۱× دوغ محلی</li></ul><div class="m"><b>۵۹۰٬۰۰۰</b><span class="tm"><i data-i="clock"></i>هم‌اکنون</span></div><div class="act"><div class="acc">پذیرش</div><div class="rej">رد</div></div></div></div><div class="col"><h4><u><i class="d" style="background:#E8802D"></i>در حال آماده‌سازی</u><span>۴</span></h4><div class="o"><div class="h"><b>SF-1044</b><span class="tg t1"><i data-i="truck"></i>ارسال</span></div><ul><li>۳× چلوکباب کوبیده</li><li>۱× سالاد شیرازی</li></ul><div class="m"><b>۹۵۰٬۰۰۰</b><span class="tm late"><i data-i="clock"></i>۲۴ دقیقه</span></div><div class="act"><div class="nxt">آماده شد</div></div></div><div class="o"><div class="h"><b>SF-1045</b><span class="tg t2"><i data-i="bag"></i>تحویل حضوری</span></div><ul><li>۲× فسنجان</li></ul><div class="m"><b>۶۴۰٬۰۰۰</b><span class="tm"><i data-i="clock"></i>۱۱ دقیقه</span></div><div class="act"><div class="nxt">آماده شد</div></div></div><div class="o"><div class="h"><b>SF-1046</b><span class="tg t1"><i data-i="truck"></i>ارسال</span></div><ul><li>۱× جوجه‌کباب</li><li>۱× دسر زعفرانی</li></ul><div class="m"><b>۴۱۰٬۰۰۰</b><span class="tm"><i data-i="clock"></i>۸ دقیقه</span></div><div class="act"><div class="nxt">آماده شد</div></div></div><div class="o"><div class="h"><b>SF-1047</b><span class="tg t2"><i data-i="bag"></i>تحویل حضوری</span></div><ul><li>۱× سلطانی</li><li>۱× میرزاقاسمی</li></ul><div class="m"><b>۵۱۰٬۰۰۰</b><span class="tm"><i data-i="clock"></i>۵ دقیقه</span></div><div class="act"><div class="nxt">آماده شد</div></div></div></div><div class="col"><h4><u><i class="d" style="background:#6CA0E0"></i>آماده‌ی تحویل</u><span>۳</span></h4><div class="o"><div class="h"><b>SF-1041</b><span class="tg t1"><i data-i="truck"></i>ارسال</span></div><ul><li>۲× زرشک‌پلو با مرغ</li></ul><div class="m"><b>۵۲۰٬۰۰۰</b><span class="tm"><i data-i="clock"></i>منتظر پیک</span></div><div class="act"><div class="nxt">تحویل به پیک</div></div></div><div class="o"><div class="h"><b>SF-1043</b><span class="tg t2"><i data-i="bag"></i>تحویل حضوری</span></div><ul><li>۱× چلوکباب کوبیده</li><li>۱× دوغ محلی</li></ul><div class="m"><b>۳۲۰٬۰۰۰</b><span class="tm"><i data-i="clock"></i>منتظر مشتری</span></div><div class="act"><div class="nxt">تحویل به مشتری</div></div></div><div class="o"><div class="h"><b>SF-1042</b><span class="tg t1"><i data-i="truck"></i>ارسال</span></div><ul><li>۱× فسنجان</li><li>۱× چلوکباب کوبیده</li></ul><div class="m"><b>۶۰۵٬۰۰۰</b><span class="tm"><i data-i="clock"></i>منتظر پیک</span></div><div class="act"><div class="nxt">تحویل به پیک</div></div></div></div><div class="col"><h4><u><i class="d" style="background:var(--ok)"></i>ارسال‌شده / تحویل‌شده</u><span>۳</span></h4><div class="o"><div class="h"><b>SF-1039</b><span class="tg t1"><i data-i="truck"></i>ارسال</span></div><ul><li>۲× چلوکباب کوبیده‌ی ویژه</li></ul><div class="m"><b>۷۰۰٬۰۰۰</b><span class="tm"><i data-i="clock"></i>در مسیر</span></div></div><div class="o"><div class="h"><b>SF-1038</b><span class="tg t1"><i data-i="truck"></i>ارسال</span></div><ul><li>۱× زرشک‌پلو با مرغ</li></ul><div class="m"><b>۲۶۰٬۰۰۰</b><span class="tm"><i data-i="clock"></i>تحویل‌شده</span></div></div><div class="o" style="opacity:.65"><div class="h"><b>SF-1037</b><span class="tg" style="background:rgba(201,80,31,.16);color:#F0916A">لغوشده</span></div><ul><li>۱× فسنجان</li></ul><div class="m"><b>۳۲۰٬۰۰۰</b><span class="tm">بازپرداخت در انتظار</span></div></div></div></div>
+    <div class="right">
+     <div class="card"><h3>فروش ساعتی امروز<a>میلیون تومان</a></h3>
+      <div class="bars"><div><i style="height:30%"></i>۱۲</div><div><i style="height:55%"></i>۱۳</div><div><i style="height:70%"></i>۱۴</div><div><i style="height:38%"></i>۱۵</div><div><i style="height:28%"></i>۱۶</div><div><i style="height:48%"></i>۱۷</div><div class="cur"><i style="height:92%"></i>۱۸</div></div></div>
+     <div class="card"><h3>پرفروش‌ترین‌های امروز</h3>
+      <div class="bs"><div><i style="background-image:url(img/c_kabab.jpg)"></i><div><b>چلوکباب کوبیده</b><small>۲۸۵٬۰۰۰ تومان</small></div><span>۱۸</span></div><div><i style="background-image:url(img/c_joojeh.jpg)"></i><div><b>زرشک‌پلو با مرغ</b><small>۲۶۰٬۰۰۰ تومان</small></div><span>۱۱</span></div><div><i style="background-image:url(img/c_dessert.jpg)"></i><div><b>دسر زعفرانی</b><small>۹۰٬۰۰۰ تومان</small></div><span>۹</span></div></div></div>
+     <div class="card"><h3>موجودی منو<a>مدیریت</a></h3>
+      <div class="av2"><div>چلوکباب کوبیده<span class="tgl"></span></div><div>زرشک‌پلو با مرغ<span class="tgl"></span></div><div>فسنجان <span style="color:#F0916A;font-size:10.5px">تمام شد</span><span class="tgl off"></span></div><div>دسر زعفرانی<span class="tgl"></span></div></div></div>
+     <div class="card"><h3>ساعات کاری و مناطق ارسال<a>تنظیمات</a></h3>
+      <div class="av2"><div>امروز<b>۱۱:۳۰ تا ۲۳:۰۰</b></div><div>مناطق ارسال فعال<b>۳ منطقه</b></div><div>سعادت‌آباد · شهرک غرب · ونک<span style="color:var(--mut);font-size:10.5px">ارسال ۴۵٬۰۰۰</span></div></div></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="sample">نمونه‌ی نمایشی · رستوران، سفارش‌ها و قیمت‌ها فرضی هستند</div>
+<script src="icons.js"></script></body></html>

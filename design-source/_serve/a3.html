@@ -1,0 +1,100 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+:root{--navy:#021C25;--teal:#0E3338;--gold:#B8924A;--gold2:#E3C98F;--bg:#F5F3ED;--ink:#10201F;--mut:#6B7774;--line:#E6E1D5}
+body{background:radial-gradient(900px 700px at 70% 30%,rgba(184,146,74,.2),transparent 60%),linear-gradient(135deg,#021C25,#0E3338 70%,#091E27)}
+.browser{background:var(--bg);color:var(--ink);font-size:13px}
+.chrome{direction:ltr}.chrome b:nth-child(1){background:#ff5f57}.chrome b:nth-child(2){background:#febc2e}.chrome b:nth-child(3){background:#28c840}
+.sb{width:236px;background:var(--navy);color:#cfdcd9;padding:22px 16px;display:flex;flex-direction:column;flex:none}
+.lg{display:flex;align-items:center;gap:12px;padding:0 6px 22px;border-bottom:1px solid rgba(255,255,255,.08)}
+.lg .m{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#E3C98F,#B8924A);color:var(--navy);display:grid;place-items:center;font:900 22px Georgia,serif}
+.lg b{color:#fff;font-size:17px;display:block}.lg small{font-size:10px;letter-spacing:.25em;color:var(--gold2)}
+.nv{margin-top:16px;display:flex;flex-direction:column;gap:4px}
+.nv div{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:12px;font-weight:500;font-size:13.5px}
+.nv .on{background:rgba(227,201,143,.14);color:#fff;box-shadow:inset -3px 0 0 var(--gold)}.nv .on svg{color:var(--gold2)}
+.nv em{margin-right:auto;font-style:normal;font-size:11px;background:var(--gold);color:var(--navy);font-weight:700;padding:1px 8px;border-radius:999px}
+.me{margin-top:auto;padding:12px;border-radius:14px;background:rgba(255,255,255,.06);display:flex;gap:10px;align-items:center}
+.me .av{width:36px;height:36px;border-radius:50%;background:#165A54;color:#fff;display:grid;place-items:center;font-weight:700}
+.me b{color:#fff;font-size:12.5px;display:block}.me small{font-size:11px;color:#91DA73}
+.main{flex:1;padding:22px 26px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.tp{display:flex;align-items:center;gap:14px}
+.tp h1{font-size:23px;font-weight:800;color:var(--navy)}.tp small{display:block;color:var(--mut);font-size:12px;margin-top:2px}
+.tp .sp{flex:1}
+.srch{width:260px;height:42px;border-radius:13px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;gap:8px;padding:0 12px;color:var(--mut)}
+.btn{height:42px;padding:0 18px;border-radius:13px;background:var(--teal);color:#fff;font-weight:700;display:flex;align-items:center;gap:8px;font-size:13px}
+.btn.g{background:linear-gradient(135deg,#C8A25B,#A67F38)}
+.kp{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.k{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 20px;display:flex;align-items:center;gap:14px}
+.k .ic{width:44px;height:44px;border-radius:14px;background:#EFE9DC;color:var(--teal);display:grid;place-items:center}
+.k b{font-size:26px;font-weight:800;color:var(--navy);display:block;line-height:1.1}.k span{color:var(--mut);font-size:12px}
+.k em{font-style:normal;margin-right:auto;font-size:11.5px;font-weight:700;color:#23643D;background:#E6F2E4;padding:3px 9px;border-radius:999px;align-self:flex-start}
+.r2{display:flex;gap:14px;flex:1}
+.card{flex:1;background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px 18px}
+.card h3{font-size:15px;font-weight:700;color:var(--navy);display:flex;align-items:center;justify-content:space-between}
+.card h3 a{font-size:12px;color:var(--gold);font-weight:600}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th{text-align:right;font-size:11.5px;color:var(--mut);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+td{padding:11px 8px;border-bottom:1px solid #F0ECE2;font-size:12.5px;vertical-align:middle}
+tr:last-child td{border:0}
+.pt{display:flex;align-items:center;gap:10px}.pt i{width:46px;height:36px;border-radius:9px;background-size:cover;background-position:center;flex:none}
+.pt b{display:block;font-size:12.5px}.pt small{color:var(--mut);font-size:11px}
+.pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.p1{background:#E6F2E4;color:#23643D}.p2{background:#FBF0D6;color:#8B6417}.p3{background:#E4ECF3;color:#2E5C86}.p4{background:#EEE;color:#555}
+.vw{display:flex;flex-direction:column;gap:11px;margin-top:10px}
+.v{display:flex;gap:12px;align-items:center;padding:13px 12px;border-radius:14px;background:#FAF8F3;border:1px solid #EFEADC}
+.v .t{width:52px;text-align:center;border-left:1px solid var(--line);padding-left:10px;flex:none}.v .t b{font-size:15px;color:var(--teal);display:block}.v .t small{font-size:10.5px;color:var(--mut)}
+.v b.n{font-size:12.5px;display:block}.v small.s{color:var(--mut);font-size:11px}
+.v .a{margin-right:auto;font-size:10.5px;font-weight:700;color:var(--teal);background:#E3F1E3;padding:3px 9px;border-radius:999px}
+.pl{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:12px}
+.col h4{font-size:12px;font-weight:700;display:flex;justify-content:space-between;color:#3b4a48;padding:0 2px}
+.col h4 span{background:#EFE9DC;border-radius:999px;padding:0 8px;font-size:11px}
+.lead{margin-top:9px;border:1px solid var(--line);border-radius:14px;padding:11px 12px;background:#fff;border-right:3px solid var(--gold)}
+.lead b{font-size:12.5px;display:block}.lead small{display:block;color:var(--mut);font-size:11px;margin-top:1px}
+.lead .nx{margin-top:6px;font-size:10.5px;color:var(--teal);font-weight:600;display:flex;gap:4px;align-items:center}.lead .nx svg{width:13px;height:13px}
+.sample{left:60px;color:#fff;bottom:16px}
+</style></head><body>
+<div class="browser">
+ <div class="chrome"><b></b><b></b><b></b><div class="url">workspace.vista-estate.example</div></div>
+ <div class="page">
+  <div class="sb"><div class="lg"><div class="m">V</div><div><b>ویستا</b><small>VISTA ESTATE</small></div></div>
+   <div class="nv"><div class="on"><i data-i="grid"></i>پیشخوان</div><div><i data-i="building"></i>املاک</div><div><i data-i="users"></i>سرنخ‌ها<em>۹</em></div><div><i data-i="calendar"></i>بازدیدها</div><div><i data-i="chart"></i>گزارش عملکرد</div><div><i data-i="shield"></i>تیم و دسترسی‌ها</div><div><i data-i="settings"></i>تنظیمات</div></div>
+   <div class="me"><div class="av">ن</div><div><b>نگار صادقی</b><small>مدیر آژانس</small></div></div></div>
+  <div class="main">
+   <div class="tp"><div><h1>پیشخوان آژانس</h1><small>یکشنبه، ۲۶ مهر ۱۴۰۵</small></div><div class="sp"></div><div class="srch"><i data-i="search" data-s="17"></i>جست‌وجوی ملک یا مشتری</div><div class="btn g"><i data-i="plus" data-s="17"></i>ثبت ملک جدید</div></div>
+   <div class="kp">
+    <div class="k"><div class="ic"><i data-i="building"></i></div><div><b>۴۸</b><span>ملک فعال</span></div><em>+۴</em></div>
+    <div class="k"><div class="ic"><i data-i="users"></i></div><div><b>۲۷</b><span>سرنخ تازه این هفته</span></div><em>+۹</em></div>
+    <div class="k"><div class="ic"><i data-i="calendar"></i></div><div><b>۱۲</b><span>بازدید برنامه‌ریزی‌شده</span></div><em>امروز ۳</em></div>
+    <div class="k"><div class="ic"><i data-i="file"></i></div><div><b>۶</b><span>مذاکره در جریان</span></div><em>۲ نزدیک توافق</em></div>
+   </div>
+   <div class="r2">
+    <div class="card" style="flex:1.75"><h3>موجودی املاک<a>مشاهده همه ←</a></h3>
+     <table><tr><th>ملک</th><th>نوع</th><th>قیمت</th><th>وضعیت</th><th>مشاور</th><th>بازدید آگهی</th></tr>
+      <tr><td><div class="pt"><i style="background-image:url(img/test_villa.jpg)"></i><div><b>تراس‌دار ۳۲۰ متری</b><small>الهیه</small></div></div></td><td>فروش</td><td>۱۸۶ میلیارد</td><td><span class="pill p1">فعال</span></td><td>رضا شریفی</td><td class="num">۱٬۲۴۰</td></tr>
+      <tr><td><div class="pt"><i style="background-image:url(img/a_villa2.jpg)"></i><div><b>ویلای استخردار</b><small>لواسان</small></div></div></td><td>فروش</td><td>۹۴ میلیارد</td><td><span class="pill p2">رزرو شده</span></td><td>سارا نیک‌پور</td><td class="num">۸۵۶</td></tr>
+      <tr><td><div class="pt"><i style="background-image:url(img/a_living.jpg)"></i><div><b>۲۱۰ متری نوساز</b><small>زعفرانیه</small></div></div></td><td>فروش</td><td>۶۸ میلیارد</td><td><span class="pill p1">فعال</span></td><td>رضا شریفی</td><td class="num">۹۷۲</td></tr>
+      <tr><td><div class="pt"><i style="background-image:url(img/a_tower.jpg)"></i><div><b>برج باغ‌دار</b><small>فرمانیه</small></div></div></td><td>رهن و اجاره</td><td>۲ میلیارد رهن</td><td><span class="pill p3">در انتظار تأیید</span></td><td>پویا فرهمند</td><td class="num">۳۱۰</td></tr>
+      <tr><td><div class="pt"><i style="background-image:url(img/a_terrace.jpg)"></i><div><b>پنت‌هاوس ۱۸۰ متری</b><small>نیاوران</small></div></div></td><td>اجاره</td><td>۱۴۰ میلیون / ماه</td><td><span class="pill p1">فعال</span></td><td>سارا نیک‌پور</td><td class="num">۴۴۸</td></tr>
+<tr><td><div class="pt"><i style="background-image:url(img/a_bedroom.jpg)"></i><div><b>آپارتمان ۱۵۵ متری</b><small>جردن</small></div></div></td><td>فروش</td><td>۴۲ میلیارد</td><td><span class="pill p4">پیش‌نویس</span></td><td>پویا فرهمند</td><td class="num">—</td></tr>
+     </table></div>
+    <div class="card" style="flex:1"><h3>بازدیدهای پیش‌رو<a>تقویم</a></h3>
+     <div class="vw">
+      <div class="v"><div class="t"><b class="num">۱۰:۳۰</b><small>امروز</small></div><div><b class="n">آقای مرادی · الهیه</b><small class="s">مشاور: رضا شریفی</small></div><div class="a">تأییدشده</div></div>
+      <div class="v"><div class="t"><b class="num">۱۴:۰۰</b><small>امروز</small></div><div><b class="n">خانم احمدی · زعفرانیه</b><small class="s">مشاور: سارا نیک‌پور</small></div><div class="a">تأییدشده</div></div>
+      <div class="v"><div class="t"><b class="num">۱۶:۳۰</b><small>امروز</small></div><div><b class="n">آقای رضایی · لواسان</b><small class="s">مشاور: پویا فرهمند</small></div><div class="a" style="background:#FBF0D6;color:#8B6417">در انتظار</div></div>
+      <div class="v"><div class="t"><b class="num">۱۱:۰۰</b><small>فردا</small></div><div><b class="n">خانم کاظمی · نیاوران</b><small class="s">مشاور: سارا نیک‌پور</small></div><div class="a" style="background:#E4ECF3;color:#2E5C86">درخواست جدید</div></div>
+<div class="v"><div class="t"><b class="num">۱۰:۰۰</b><small>پنجشنبه</small></div><div><b class="n">آقای بهرامی · فرمانیه</b><small class="s">مشاور: پویا فرهمند</small></div><div class="a">تأییدشده</div></div>
+     </div></div>
+   </div>
+   <div class="card" style="flex:none"><h3>مسیر سرنخ‌ها<a>یادآوری‌های امروز: ۵</a></h3>
+    <div class="pl">
+     <div class="col"><h4>جدید <span>۹</span></h4><div class="lead"><b>خانم کاظمی</b><small>خرید · نیاوران · تا ۱۲۰ میلیارد</small><div class="nx"><i data-i="phone"></i>تماس تا ساعت ۱۲</div></div><div class="lead"><b>آقای صالحی</b><small>خرید · جردن · ۷۰ تا ۹۰ میلیارد</small><div class="nx"><i data-i="message"></i>پیام پیگیری</div></div></div>
+     <div class="col"><h4>تماس اولیه <span>۷</span></h4><div class="lead"><b>آقای رضایی</b><small>خرید ویلا · لواسان</small><div class="nx"><i data-i="calendar"></i>تعیین بازدید</div></div><div class="lead"><b>خانم نادری</b><small>رهن و اجاره · نیاوران</small><div class="nx"><i data-i="phone"></i>تماس فردا ۱۰:۰۰</div></div></div>
+     <div class="col"><h4>بازدید <span>۵</span></h4><div class="lead"><b>آقای مرادی</b><small>خرید · الهیه</small><div class="nx"><i data-i="clock"></i>بازدید ۱۰:۳۰ امروز</div></div><div class="lead"><b>خانم توکلی</b><small>خرید · زعفرانیه</small><div class="nx"><i data-i="calendar"></i>بازدید دوم، پنجشنبه</div></div></div>
+     <div class="col"><h4>مذاکره <span>۴</span></h4><div class="lead"><b>خانم احمدی</b><small>خرید · زعفرانیه</small><div class="nx"><i data-i="file"></i>ارسال پیش‌نویس قرارداد</div></div><div class="lead"><b>آقای حسینی</b><small>خرید · الهیه</small><div class="nx"><i data-i="file"></i>بررسی سند</div></div></div>
+     <div class="col"><h4>توافق <span>۲</span></h4><div class="lead" style="border-right-color:#23643D"><b>آقای بهرامی</b><small>رهن و اجاره · فرمانیه</small><div class="nx"><i data-i="check"></i>هماهنگی سند</div></div></div>
+    </div></div>
+  </div>
+ </div>
+</div>
+<div class="sample">نمونه‌ی نمایشی · داده‌ها، نام‌ها و املاک فرضی هستند</div>
+<script src="icons.js"></script></body></html>

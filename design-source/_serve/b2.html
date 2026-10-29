@@ -1,0 +1,69 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+:root{--navy:#021C25;--teal:#0E3338;--ft:#165A54;--lg:#91DA73;--bg:#F1F6F4;--ink:#0F2428;--mut:#66787A;--line:#DDE7E5}
+body{background:radial-gradient(900px 700px at 28% 45%,rgba(22,90,84,.55),transparent 62%),linear-gradient(135deg,#021C25,#091E27 60%,#0E3338)}
+.bezel{left:215px;top:62px}
+.phone{background:var(--bg);color:var(--ink)}
+.status{color:#fff}.gesture{background:#10201F}
+
+.top{position:absolute;top:0;left:0;right:0;height:176px;background:linear-gradient(160deg,#0E3338,#165A54);border-radius:0 0 28px 28px}
+.hd{position:relative;z-index:3;display:flex;align-items:center;gap:12px;padding:8px 20px 0;color:#fff}
+.hd .bk{width:38px;height:38px;border-radius:13px;background:rgba(255,255,255,.14);display:grid;place-items:center}
+.hd h1{font-size:18px;font-weight:800}.hd small{display:block;font-size:11.5px;opacity:.75;font-weight:400;margin-top:1px}
+.tabs{position:relative;z-index:3;display:flex;gap:8px;padding:14px 16px 0}
+.tabs span{font-size:12px;font-weight:600;padding:7px 13px;border-radius:999px;color:#cfe5df;background:rgba(255,255,255,.12);white-space:nowrap}
+.tabs .on{background:#fff;color:#0E3338}
+.cal{position:relative;z-index:3;margin:12px 16px 0;background:#fff;border-radius:24px;padding:12px 12px 10px;box-shadow:0 22px 34px -22px rgba(2,28,37,.5);border:1px solid var(--line)}
+.cm{display:flex;justify-content:space-between;align-items:center;padding:0 6px}.cm b{font-size:14.5px}.cm i{width:30px;height:30px;border-radius:10px;background:#EEF4F2;display:grid;place-items:center;color:var(--ft)}
+.cm svg{width:16px;height:16px}
+.wk,.gr{display:grid;grid-template-columns:repeat(7,1fr);text-align:center}
+.wk{margin-top:8px;font-size:10.5px;color:var(--mut);font-weight:600}.wk span:last-child{color:#C2543D}
+.gr{row-gap:3px;margin-top:4px}.gr .d{height:31px;display:grid;place-items:center;font-size:13px;font-weight:600;position:relative}
+.gr .fr{color:#C2543D}
+.gr .sel{background:#DDF0E3;color:#0E3338}.gr .sel.s1{border-radius:0 17px 17px 0;background:#DDF0E3}.gr .sel.s3{border-radius:17px 0 0 17px}
+.gr .sel.s1:before,.gr .sel.s3:before{content:"";position:absolute;width:34px;height:34px;border-radius:50%;background:#165A54;z-index:-1}
+.gr .sel.s1,.gr .sel.s3{color:#fff;z-index:1}.gr .sel.s1:before{right:0}.gr .sel.s3:before{left:0}
+.gr .sel.s1,.gr .sel.s3{isolation:isolate}
+.sm{display:flex;gap:8px;margin:10px 16px 0}
+.sm div{flex:1;background:#fff;border:1px solid var(--line);border-radius:16px;padding:9px 12px}.sm small{display:block;font-size:10.5px;color:var(--mut)}.sm b{font-size:13px}
+.fld{margin:8px 16px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:9px 13px;display:flex;justify-content:space-between;align-items:center}
+.fld small{display:block;font-size:10.5px;color:var(--mut)}.fld b{font-size:13px}.fld svg{width:17px;height:17px;color:var(--mut)}
+.tl{margin:10px 16px 0;background:#fff;border:1px solid var(--line);border-radius:20px;padding:12px 14px}
+.tl h4{font-size:13px;font-weight:700;display:flex;justify-content:space-between}.tl h4 span{font-size:11px;font-weight:700;color:#8B6417;background:#FBF0D6;border-radius:999px;padding:2px 9px}
+.stp{display:flex;margin-top:10px;position:relative}
+.stp>div{flex:1;text-align:center;position:relative;font-size:10.5px;color:var(--mut)}
+.stp>div b{display:block;font-size:11.5px;color:var(--ink);margin-top:5px}
+.stp>div i{width:26px;height:26px;border-radius:50%;margin:0 auto;display:grid;place-items:center;background:#EEF4F2;color:#9AAAAA;position:relative;z-index:2}
+.stp>div:not(:last-child):after{content:"";position:absolute;top:12px;right:50%;width:100%;height:2px;background:#DDE7E5;z-index:1}
+.stp .ok i{background:#3FB25A;color:#fff}.stp .ok:after{background:#3FB25A!important}.stp .cur i{background:#fff;border:2px solid #3FB25A;color:#3FB25A;box-shadow:0 0 0 4px rgba(63,178,90,.16)}
+.stp svg{width:14px;height:14px}
+.cta{position:absolute;bottom:0;left:0;right:0;height:88px;background:#fff;border-top:1px solid var(--line);padding:12px 16px 0;z-index:8}
+.cta div{height:52px;border-radius:18px;background:linear-gradient(135deg,#165A54,#0E3338);color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 14px 22px -12px rgba(14,51,56,.9)}
+.side{position:absolute;right:120px;top:250px;width:500px;color:#fff}
+.side .co{display:flex;align-items:center;gap:14px}.side .co b{font-size:17px;display:block}.side .co small{font-size:12px;color:#91DA73;letter-spacing:.04em;direction:ltr;display:block;text-align:right}
+.side h2{font-size:54px;font-weight:800;line-height:1.25;margin-top:34px}.side h2 small{display:block;font-size:18px;font-weight:500;color:#91DA73;margin-top:8px;direction:ltr;text-align:right;letter-spacing:.06em}
+.side p{margin-top:30px;font-size:21px;line-height:1.9;opacity:.88}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.tags span{font-size:15px;padding:9px 18px;border:1px solid rgba(145,218,115,.45);border-radius:999px;color:#C5ECB3}
+.sample{right:120px;color:#fff}
+</style></head><body>
+<div class="bezel"><div class="phone">
+ <div class="top"></div><div class="island"></div>
+ <div class="status"><span class="num">۹:۴۱</span><span class="r"><i data-i="signal" data-s="16"></i><i data-i="wifi" data-s="16"></i><i data-i="battery" data-s="22"></i></span></div>
+ <div class="hd"><div class="bk"><i data-i="chr"></i></div><div><h1>درخواست مرخصی</h1><small>مرخصی استحقاقی · مانده ۱۲ روز</small></div></div>
+ <div class="tabs"><span class="on">مرخصی</span><span>مرخصی ساعتی</span><span>اضافه‌کار</span><span>مأموریت</span></div>
+ <div class="cal"><div class="cm"><i data-i="chr"></i><b>آبان ۱۴۰۵</b><i data-i="chl"></i></div>
+  <div class="wk"><span>ش</span><span>ی</span><span>د</span><span>س</span><span>چ</span><span>پ</span><span>ج</span></div>
+  <div class="gr"><i></i><i></i><i></i><i></i><i></i><i></i><span class="d fr">۱</span><span class="d">۲</span><span class="d">۳</span><span class="d">۴</span><span class="d">۵</span><span class="d">۶</span><span class="d">۷</span><span class="d fr">۸</span><span class="d">۹</span><span class="d">۱۰</span><span class="d">۱۱</span><span class="d sel s1">۱۲</span><span class="d sel">۱۳</span><span class="d sel s3">۱۴</span><span class="d fr">۱۵</span><span class="d">۱۶</span><span class="d">۱۷</span><span class="d">۱۸</span><span class="d">۱۹</span><span class="d">۲۰</span><span class="d">۲۱</span><span class="d fr">۲۲</span><span class="d">۲۳</span><span class="d">۲۴</span><span class="d">۲۵</span><span class="d">۲۶</span><span class="d">۲۷</span><span class="d">۲۸</span><span class="d fr">۲۹</span><span class="d">۳۰</span><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+ <div class="sm"><div><small>بازه‌ی انتخابی</small><b>۱۲ تا ۱۴ آبان</b></div><div><small>مدت</small><b>۳ روز کاری</b></div><div><small>مانده پس از تأیید</small><b>۹ روز</b></div></div>
+ <div class="fld"><div><small>جانشین در زمان مرخصی</small><b>علی‌رضا نوروزی</b></div><i data-i="chd"></i></div>
+ <div class="tl"><h4>مسیر تأیید این درخواست<span>پس از ارسال</span></h4>
+  <div class="stp"><div class="ok"><i data-i="check"></i>ثبت درخواست<b>سارا موسوی</b></div><div class="cur"><i data-i="user"></i>مدیر مستقیم<b>مینا رحیمی</b></div><div><i data-i="users"></i>منابع انسانی<b>واحد HR</b></div><div><i data-i="check"></i>نتیجه<b>اعلان به شما</b></div></div></div>
+ <div class="cta"><div><i data-i="check"></i>ارسال برای تأیید</div></div>
+ <div class="gesture"></div>
+</div></div>
+<div class="side"><div class="co"><u data-logo="64"></u><div><b>شرکت کاوشگران فناوری خاورمیانه</b><small>Middle East Technology Explorers</small></div></div>
+ <h2>درخواست مرخصی<small>LEAVE REQUEST · SHIFT CALENDAR</small></h2>
+ <p>انتخاب بازه روی تقویم شمسی، مشاهده‌ی مانده‌ی مرخصی و مسیر تأیید توسط مدیر مستقیم و منابع انسانی پیش از ارسال درخواست.</p>
+ <div class="tags"><span>تقویم شمسی</span><span>مانده‌ی مرخصی</span><span>مسیر تأیید</span></div></div>
+<div class="sample">نمونه‌ی نمایشی · نام‌ها و داده‌ها فرضی هستند</div>
+<script src="icons.js"></script><script src="logo.js"></script></body></html>
